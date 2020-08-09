@@ -1,0 +1,9 @@
+skill_accordion:
+  version: 1.x
+  css:
+    layout:
+      templates/css/skill-accordion.css: {}
+    theme:
+      templates/css/skill-accordion.css: {}
+  js:
+    templates/js/skill-accordion.js: {}

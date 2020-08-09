@@ -1,0 +1,9 @@
+name: Skill Accordion Module
+description: Creates a block to show your Skills.
+package: custom
+type: module
+version: 1.0
+core_version_requirement: ^8 || ^9
+core: 8.x
+dependencies:
+  - block

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function skill_accordion_theme($existing, $type, $theme, $path) {
+  return [
+    'skill_accordion' => [
+      'variables' => [
+        'skill_list' => []
+      ],
+    ],
+  ];
+}
