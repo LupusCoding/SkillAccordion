@@ -28,5 +28,12 @@ Drupal Plugin to create a list of knowledge / skills as block.
 
 For more information please contact [LupusCoding](mailto:dittrich.ralph@lupuscoding.de)
 
+## Known issues
+### 1. jQuery throws "Uncaught Error: Syntax error, unrecognized expression:"
+Currently I don't know why jQuery is throwing an error. The module does not use
+jQuery. Because the error does not impact the functionality, I will fix this if
+I can figure out why jQuery has a problem.
+
+## Changelog
 **version 1.0**
 * 1st release version
