@@ -1,0 +1,290 @@
+/* Bootstrap stuff */
+.ska-row,
+.ska-row-fluid,
+.ska-row div,
+.ska-row-fluid div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ska-row:before,
+.ska-row:after,
+.ska-row-fluid:before,
+.ska-row-fluid:after,
+.ska-row div:before,
+.ska-row div:after,
+.ska-row-fluid div:before,
+.ska-row-fluid div:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ska-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .ska-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .ska-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .ska-container {
+    width: 1170px;
+  }
+}
+.ska-row-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.clearfix:before,
+.clearfix:after,
+.ska-container:before,
+.ska-container:after,
+.ska-row-fluid:before,
+.ska-row-fluid:after,
+.ska-row:before,
+.ska-row:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after,
+.ska-container:after,
+.ska-row-fluid:after,
+.ska-row:after {
+  clear: both;
+}
+.ska-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.ska-1,
+.ska-2,
+.ska-3,
+.ska-4,
+.ska-5,
+.ska-6,
+.ska-7,
+.ska-8,
+.ska-9,
+.ska-10,
+.ska-11,
+.ska-12
+{
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.ska-1 {
+  width: 8.33333333%;
+}
+.ska-2 {
+  width: 16.66666667%;
+}
+.ska-3 {
+  width: 25%;
+}
+.ska-4 {
+  width: 33.33333333%;
+}
+.ska-5 {
+  width: 41.66666667%;
+}
+.ska-6 {
+  width: 50%;
+}
+.ska-7 {
+  width: 58.33333333%;
+}
+.ska-8 {
+  width: 66.66666667%;
+}
+.ska-9 {
+  width: 75%;
+}
+.ska-10 {
+  width: 83.33333333%;
+}
+.ska-11 {
+  width: 91.66666667%;
+}
+.ska-12 {
+  width: 100%;
+}
+.ska-well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+/* SkillAccordion Panel */
+.ska-pan {
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.ska-pan-button {
+  background-color: #fff;
+}
+.ska-pan-button:hover,
+.ska-pan-button.active {
+  background-color: #d9d9ff;
+}
+.ska-pan-button a {
+  display: block;
+  text-align: left;
+  padding-left: 5px;
+  text-decoration: none;
+  border-bottom-style: none;
+}
+.ska-pan-button a:hover,
+.ska-pan-button a:focus,
+.ska-pan-button a:active {
+  text-decoration: none;
+  border-bottom-style: none;
+  border: none;
+  color: #0071b3;
+}
+.ska-pan-group {
+  margin-bottom: 20px;
+}
+.ska-pan-group .ska-pan {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.ska-pan-group .ska-pan + .ska-pan {
+  margin-top: 5px;
+}
+.ska-pan > .ska-col > div:not(.ska-row) {
+  background-color: #fff;
+}
+/* SkillAccordion Collapse */
+.ska-col {
+  display: none;
+}
+.ska-col.in {
+  display: block;
+}
+.ska-col.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.ska-12.progress-box {}
+.ska-pan > .ska-col > .progress-box:not(.ska-row):hover {
+    background-color: #d9d9ff;
+}
+.progress-box .box-header {
+    font-weight: bold;
+    padding-top: 8px;
+    line-height: 1.42857143;
+    text-align: center;
+}
+.progress-box .box-header span {
+    border-bottom: 1px solid #000;
+    display: block;
+    margin-bottom: 15px;
+}
+.progress-box .box-name {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.progress-box .box-name span {
+    font-weight: bold;
+    line-height: 1.42857143;
+}
+.progress-box .progress-container {}
+/* SkillAccordion Progress Bar */
+.progress-box .progress {
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    width: 100%;
+}
+.progress-box .progress .progress-bar {
+    float: left;
+    height: 100%;
+    width: 20%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-box.l1 .progress .progress-bar.l1,
+.progress-box.l2 .progress .progress-bar.l1,
+.progress-box.l3 .progress .progress-bar.l1,
+.progress-box.l4 .progress .progress-bar.l1,
+.progress-box.l5 .progress .progress-bar.l1 {
+    background-color: #003056;
+}
+.progress-box.l2 .progress .progress-bar.l2,
+.progress-box.l3 .progress .progress-bar.l2,
+.progress-box.l4 .progress .progress-bar.l2,
+.progress-box.l5 .progress .progress-bar.l2 {
+    background-color: #005AA3;
+}
+.progress-box.l3 .progress .progress-bar.l3,
+.progress-box.l4 .progress .progress-bar.l3,
+.progress-box.l5 .progress .progress-bar.l3 {
+    background-color: #0087F5;
+}
+.progress-box.l4 .progress .progress-bar.l4,
+.progress-box.l5 .progress .progress-bar.l4 {
+    background-color: #5CB6FF;
+}
+.progress-box.l5 .progress .progress-bar.l5 {
+    background-color: #99D1FF;
+}
+/* extra stuff */
+.data-table {
+    width: 100%;
+}
+.data-table tr td {
+    vertical-align: top;
+}
+.data-table tr td:first-child {
+    width: 33%;
+}
+@media (max-width: 767px) {
+    .data-table tr td:first-child {
+        width: 40%;
+    }
+}

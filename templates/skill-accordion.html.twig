@@ -1,0 +1,62 @@
+{# skill_accordion/templates/skill-accordion.html.twig #}
+{% extends "block.html.twig" %}
+
+{% block content %}
+<div class="ska-row-fluid" id="kompetenz">
+  <div class="ska-12 ska-well">
+    <div class="ska-row">
+      <div class="ska-4">
+
+        <div class="ska-pan-group">
+          {% for skill_set in skill_list %}
+            <div class="ska-pan ska-pan-button">
+              <h4><a data-parent="#pgroup-{{ skill_set.title|replace({' ': "-"})|lower }}" data-toggle="ska-col" href="#{{ skill_set.title|lower }}">{{ skill_set.title }}</a></h4>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+      <div class="ska-8">
+
+        <div class="ska-pan-group" id="pgroup">
+          <div class="ska-pan ska-pan-panel">
+            {% for skill_set in skill_list %}
+              {% if loop.first %}
+                <div class="ska-col in" id="{{ skill_set.title|replace({' ': "-"})|lower }}">
+              {% else %}
+                <div class="ska-col" id="{{ skill_set.title|replace({' ': "-"})|lower }}">
+              {% endif %}
+                <div class="ska-row progress-box">
+                  <div class="ska-12 box-header"><span>{{ skill_set.title }}</span></div>
+                </div>
+
+                {% for skill in skill_set %}
+                  {% if skill.level|length > 0 %}
+                    <div class="ska-12 progress-box l{{ skill.level }}">
+                      <div class="ska-row">
+                        <div class="ska-4 box-name"><span>{{ skill.name }}</span></div>
+
+                        <div class="ska-8 progress-container">
+                          <div class="progress" title="{{ skill.name }}: {{ skill.level_hr}}">
+                            <div class="progress-bar l1">&nbsp;</div>
+                            <div class="progress-bar l2">&nbsp;</div>
+                            <div class="progress-bar l3">&nbsp;</div>
+                            <div class="progress-bar l4">&nbsp;</div>
+                            <div class="progress-bar l5">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
